@@ -13,7 +13,7 @@
 <meta property="og:description" content="Local, outstation, airport and sightseeing taxi enquiries. Call 9360101223.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800\&family=Figtree:wght@400;600;700\&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
  {"@type":"TravelAgency","name":"3-Star Travels","description":"Local taxi, outstation cab, airport transfer and sightseeing taxi services in Kanyakumari and Nagercoil.","telephone":"+919360101223","address":{"@type":"PostalAddress","streetAddress":"Vettoornimadam","addressLocality":"Nagercoil","addressRegion":"Tamil Nadu","addressCountry":"IN"},"areaServed":["Kanyakumari","Nagercoil","Trivandrum","Madurai","Rameswaram","Munnar","Kochi","Ooty","Chennai"]},
@@ -42,6 +42,7 @@ input,select{width:100%;padding:11px;border:0;border-radius:10px;background:whit
 .table-wrap{overflow-x:auto;border:2px solid var(--ink);border-radius:14px;background:var(--card)}table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}th{background:var(--ink);color:var(--bg)}tbody tr:nth-child(even) td{background:rgba(255,200,87,.14)}td.rate{font-weight:700;color:var(--co)}.band .table-wrap{background:#fff;border-color:var(--sun)}.band .table-wrap table{color:#1a1a2e}.band .table-wrap tbody td{color:#1a1a2e;background:#fff}.band .table-wrap tbody tr:nth-child(even) td{background:#fff5e4}.band .table-wrap th{background:#1a1a2e;color:#fff}.band .table-wrap tbody tr:last-child td{border-bottom:0}
 .chips span{background:var(--sun);color:var(--ink);padding:5px 12px;border-radius:99px;font-size:14px;font-weight:700}
 .faq .card p{margin:0}footer{background:var(--ink);color:#d4d4e6;padding:32px 0 92px}.fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:10;box-shadow:0 6px 18px #0006}
+@media(max-width:430px){.fab{right:10px;bottom:10px;padding:10px 16px;font-size:14px}}
 @media(max-width:780px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:30px}section{padding:44px 0}.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:430px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.btn{margin-bottom:7px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -60,7 +61,7 @@ input,select{width:100%;padding:11px;border:0;border-radius:10px;background:whit
   <h2>Get a free quotation</h2>
   <div class="grid">
    <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
-   <div class="field"><label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" autocomplete="tel" required></div>
+   <div class="field"><label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+() -]{8,18}" title="Enter a valid mobile number" required></div>
    <div class="field"><label for="pickup">Pickup location</label><select id="pickup"><option>Kanyakumari</option><option>Nagercoil</option><option>Vettoornimadam</option><option>Other (mention in message)</option></select></div>
    <div class="field"><label for="destination">Destination</label><select id="destination"></select></div>
    <div class="field"><label for="date">Pickup date</label><input id="date" type="date" required></div>
@@ -195,7 +196,7 @@ byId("enquiry").addEventListener("submit",e=>{
   "Vehicle: "+get("vehicle"),"Seating: "+get("seating"),
   "Trip type: "+get("trip"),"Facilities: "+get("facility")
  ].join("\n");
- window.open("https://wa.me/919360101223?text="+encodeURIComponent(message),"_blank","noopener");
+ window.location.href="https://wa.me/919360101223?text="+encodeURIComponent(message);
 });
 </script>
 </body>
