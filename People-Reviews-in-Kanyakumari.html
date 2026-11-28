@@ -7,30 +7,177 @@
 
 <title>People Reviews in Kanyakumari, Nagercoil & Marthandam</title>
 
-<meta name="description" content="Read and share genuine people reviews in Kanyakumari, Nagercoil and Marthandam. Discover travel agencies, taxi services and local business experiences.">
+<meta name="description" content="Read and share people reviews of travel agencies, taxi services and local businesses in Kanyakumari, Nagercoil and Marthandam. Share your experience.">
 
-<meta name="keywords" content="people reviews Kanyakumari, people reviews Nagercoil, people reviews Marthandam, travel agency reviews Kanyakumari, taxi reviews Nagercoil, local business reviews">
+<meta name="keywords" content="People Reviews Kanyakumari, People Reviews Nagercoil, People Reviews Marthandam, Travel Agency Reviews, Taxi Service Reviews, Local Business Reviews">
 
-<meta name="author" content="People Review">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#102b50">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#101b35">
 
-<!-- CHANGE THIS DOMAIN BEFORE PUBLISHING -->
 <link rel="canonical" href="https://YOURDOMAIN.com/">
 
+<meta property="og:title" content="People Review – Trusted by Our Reviews">
+<meta property="og:description" content="Read and share real customer experiences about businesses in Kanyakumari, Nagercoil and Marthandam.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="People Reviews in Kanyakumari, Nagercoil & Marthandam">
-<meta property="og:description" content="Discover genuine customer experiences. Read and share reviews about travel agencies, taxi services and local businesses.">
 <meta property="og:url" content="https://YOURDOMAIN.com/">
-<meta property="og:site_name" content="People Review">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="People Review">
-<meta name="twitter:description" content="Read and share genuine local customer reviews in Kanyakumari district.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#101b35;
+  --orange:#ff8a35;
+  --light:#f5f7fb;
+  --text:#253047;
+  --muted:#6b7280;
+  --border:#e5e9f0;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.65;
+}
+a {text-decoration:none;color:inherit}
+.container {width:min(1120px,92%);margin:auto}
+header {
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:10;
+}
+.nav {
+  min-height:72px;
+  display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
+}
+.logo {font-size:25px;font-weight:900;color:var(--navy)}
+.logo span {color:var(--orange)}
+.nav-links {display:flex;gap:25px;font-weight:700;font-size:14px}
+.nav-links a:hover {color:var(--orange)}
+.hero {
+  background:linear-gradient(120deg,#101b35,#1b3157);
+  color:white;padding:85px 0;
+}
+.hero-content {max-width:760px}
+.tag {
+  color:#ffc08f;font-size:13px;
+  font-weight:800;letter-spacing:2px;
+  text-transform:uppercase;
+}
+.hero h1 {
+  font-size:clamp(34px,5vw,54px);
+  line-height:1.15;margin:18px 0;
+  font-weight:900;
+}
+.hero p {font-size:17px;color:#e2e8f0;max-width:680px}
+.hero-buttons {display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn {
+  display:inline-block;padding:13px 23px;
+  border-radius:7px;font-weight:800;
+  border:0;cursor:pointer;font-size:14px;
+}
+.btn-orange {background:var(--orange);color:#fff}
+.btn-white {background:white;color:var(--navy)}
+section {padding:65px 0}
+.section-title {font-size:31px;color:var(--navy);font-weight:900;margin-bottom:10px}
+.section-desc {color:var(--muted);max-width:720px;margin-bottom:30px}
+.locations {
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+}
+.location-card {
+  border:1px solid var(--border);border-radius:12px;
+  padding:23px;background:#fff;
+  transition:.2s;
+}
+.location-card:hover {
+  transform:translateY(-4px);
+  box-shadow:0 10px 28px #101b3510;
+}
+.location-card h3 {font-size:20px;color:var(--navy);margin-bottom:6px}
+.location-card p {font-size:14px;color:var(--muted)}
+.location-card a {display:inline-block;margin-top:12px;color:#e76f1b;font-weight:800}
+.form-section {background:var(--light)}
+.form-layout {
+  display:grid;grid-template-columns:.8fr 1.2fr;
+  gap:35px;align-items:start;
+}
+.form-info {
+  background:var(--navy);color:white;
+  padding:30px;border-radius:13px;
+}
+.form-info h2 {font-size:27px;margin-bottom:12px}
+.form-info p {color:#dce4f0}
+.form-info ul {padding-left:20px;margin-top:20px;color:#e8edf5}
+.review-form {
+  background:#fff;padding:30px;
+  border:1px solid var(--border);border-radius:13px;
+  box-shadow:0 8px 28px #101b3508;
+}
+.field {margin-bottom:17px}
+.field label {
+  display:block;font-weight:800;
+  font-size:14px;margin-bottom:7px;color:var(--navy);
+}
+.field input,.field select,.field textarea {
+  width:100%;padding:13px;
+  border:1px solid #d9dfeb;border-radius:7px;
+  font-size:15px;font-family:inherit;
+  outline:none;background:#fff;
+}
+.field input:focus,.field select:focus,.field textarea:focus {
+  border-color:var(--orange);
+}
+.field textarea {min-height:125px;resize:vertical}
+.two-col {display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.rating {display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:5px}
+.rating input {display:none}
+.rating label {font-size:31px;color:#cbd0da;cursor:pointer}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {color:#ffad28}
+.review-list {
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+}
+.review-card {
+  border:1px solid var(--border);border-radius:12px;
+  padding:23px;background:#fff;
+}
+.review-card h3 {color:var(--navy);font-size:19px}
+.review-meta {font-size:13px;color:var(--muted);margin:5px 0 12px}
+.stars {color:#f5a623;letter-spacing:2px}
+.review-text {margin-top:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.review-tools {display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.review-tools input,.review-tools select {
+  padding:12px;border:1px solid var(--border);
+  border-radius:7px;font-size:14px;
+}
+.empty {padding:30px;text-align:center;color:var(--muted);grid-column:1/-1}
+.seo-content {background:var(--light)}
+.seo-content h3 {font-size:21px;color:var(--navy);margin:22px 0 8px}
+.seo-content p {color:#4b5563;margin-bottom:12px}
+.faq-item {padding:18px 0;border-bottom:1px solid var(--border)}
+.faq-item h3 {font-size:17px;color:var(--navy);margin-bottom:6px}
+footer {background:#101b35;color:#fff;padding:35px 0}
+.footer-inner {
+  display:flex;justify-content:space-between;
+  gap:20px;flex-wrap:wrap;
+}
+footer p {color:#cbd5e1;font-size:14px}
+footer a {color:#ffc08f}
+.notice {font-size:12px;color:var(--muted);margin-top:12px}
+@media(max-width:750px) {
+  .nav-links {gap:12px;font-size:12px}
+  .logo {font-size:21px}
+  .hero {padding:65px 0}
+  .locations,.review-list,.form-layout {grid-template-columns:1fr}
+  .two-col {grid-template-columns:1fr}
+  section {padding:48px 0}
+}
+@media(max-width:420px) {
+  .nav {align-items:flex-start;padding:15px 0;flex-direction:column}
+  .nav-links {width:100%;justify-content:space-between}
+}
+</style>
 
 <script type="application/ld+json">
 {
@@ -38,1100 +185,15 @@
   "@type":"WebSite",
   "name":"People Review",
   "url":"https://YOURDOMAIN.com/",
-  "description":"A platform for sharing genuine customer experiences and discovering local business reviews.",
+  "description":"Read and share customer reviews of travel agencies, taxi services and local businesses in Kanyakumari, Nagercoil and Marthandam.",
   "inLanguage":"en-IN",
   "areaServed":[
-    {"@type":"AdministrativeArea","name":"Kanyakumari"},
+    {"@type":"City","name":"Kanyakumari"},
     {"@type":"City","name":"Nagercoil"},
     {"@type":"Place","name":"Marthandam"}
   ]
 }
 </script>
-
-<style>
-:root {
-  --navy:#102b50;
-  --blue:#1769d2;
-  --orange:#ffab45;
-  --bg:#f5f8fc;
-  --text:#1b304a;
-  --muted:#708096;
-  --border:#e5ebf3;
-}
-
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html {scroll-behavior:smooth}
-
-body {
-  font-family:'DM Sans',sans-serif;
-  color:var(--text);
-  line-height:1.7;
-}
-
-h1,h2,h3,h4 {
-  font-family:'Outfit',sans-serif;
-  line-height:1.25;
-}
-
-a {text-decoration:none;color:inherit}
-
-button,input,select,textarea {font:inherit}
-
-.container {
-  width:min(1160px,92%);
-  margin:auto;
-}
-
-.btn {
-  display:inline-block;
-  padding:13px 22px;
-  border:0;
-  border-radius:8px;
-  background:var(--blue);
-  color:white;
-  font-weight:700;
-  cursor:pointer;
-  transition:.2s;
-}
-
-.btn:hover {
-  background:var(--navy);
-  transform:translateY(-2px);
-}
-
-.btn-orange {
-  background:var(--orange);
-  color:#142c48;
-}
-
-.btn-outline {
-  background:transparent;
-  border:1px solid #ffffff90;
-  color:white;
-}
-
-/* HEADER */
-
-header {
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:100;
-  border-bottom:1px solid var(--border);
-}
-
-.nav {
-  min-height:76px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-}
-
-.logo {
-  font-family:'Outfit',sans-serif;
-  font-size:25px;
-  font-weight:800;
-  color:var(--navy);
-}
-
-.logo span {color:var(--orange)}
-
-.nav-links {
-  display:flex;
-  align-items:center;
-  gap:25px;
-  font-size:14px;
-  font-weight:600;
-}
-
-.nav-links a:hover {color:var(--blue)}
-
-/* HERO */
-
-.hero {
-  padding:95px 0 100px;
-  background:linear-gradient(120deg,#102b50,#174e83);
-  color:white;
-  text-align:center;
-}
-
-.hero-content {
-  max-width:850px;
-  margin:auto;
-}
-
-.hero-label {
-  display:inline-block;
-  padding:7px 17px;
-  border:1px solid #ffffff50;
-  background:#ffffff12;
-  border-radius:30px;
-  font-size:13px;
-  margin-bottom:23px;
-}
-
-.hero h1 {
-  font-size:clamp(35px,5.5vw,57px);
-  font-weight:800;
-  margin-bottom:20px;
-}
-
-.hero h1 span {color:var(--orange)}
-
-.hero p {
-  max-width:700px;
-  margin:0 auto 30px;
-  color:#d8e4f2;
-  font-size:16px;
-}
-
-.hero-actions {
-  display:flex;
-  justify-content:center;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-/* STATS */
-
-.stats {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  background:white;
-  border:1px solid var(--border);
-  box-shadow:0 8px 30px #102b5010;
-  border-radius:13px;
-  margin-top:-30px;
-  position:relative;
-  padding:25px;
-  text-align:center;
-}
-
-.stat strong {
-  display:block;
-  font-family:'Outfit',sans-serif;
-  font-size:26px;
-  color:var(--navy);
-}
-
-.stat span {
-  color:var(--muted);
-  font-size:13px;
-}
-
-/* COMMON SECTION */
-
-.section {padding:75px 0}
-
-.section-heading {
-  text-align:center;
-  max-width:720px;
-  margin:0 auto 38px;
-}
-
-.section-heading h2 {
-  color:var(--navy);
-  font-size:34px;
-  margin-bottom:12px;
-}
-
-.section-heading p {color:var(--muted)}
-
-/* CATEGORY */
-
-.categories {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.category {
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:26px 15px;
-  text-align:center;
-  background:white;
-  transition:.2s;
-}
-
-.category:hover {
-  transform:translateY(-4px);
-  border-color:var(--blue);
-}
-
-.category-icon {
-  font-size:32px;
-  margin-bottom:10px;
-}
-
-.category h3 {
-  font-size:16px;
-  color:var(--navy);
-  margin-bottom:5px;
-}
-
-.category p {
-  font-size:12px;
-  color:var(--muted);
-}
-
-/* LOCATION */
-
-.location-section {background:var(--bg)}
-
-.location-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.location-card {
-  background:white;
-  border:1px solid var(--border);
-  border-radius:13px;
-  padding:28px;
-  transition:.2s;
-}
-
-.location-card:hover {
-  transform:translateY(-4px);
-  box-shadow:0 10px 30px #102b5010;
-}
-
-.location-card h3 {
-  color:var(--navy);
-  font-size:21px;
-  margin-bottom:12px;
-}
-
-.location-card p {
-  font-size:14px;
-  color:var(--muted);
-  margin-bottom:17px;
-}
-
-.location-card a {
-  color:var(--blue);
-  font-weight:700;
-  font-size:14px;
-}
-
-/* FORM */
-
-.form-section {background:#fff}
-
-.review-layout {
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
-  gap:30px;
-  align-items:start;
-}
-
-.form-card {
-  padding:32px;
-  border:1px solid var(--border);
-  border-radius:14px;
-  box-shadow:0 10px 35px #102b5008;
-}
-
-.form-card h3 {
-  font-size:24px;
-  color:var(--navy);
-  margin-bottom:7px;
-}
-
-.subtitle {
-  font-size:14px;
-  color:var(--muted);
-  margin-bottom:25px;
-}
-
-.field {margin-bottom:19px}
-
-.field label {
-  display:block;
-  font-weight:700;
-  font-size:14px;
-  margin-bottom:8px;
-}
-
-.field input,
-.field select,
-.field textarea {
-  width:100%;
-  border:1px solid #dce3ed;
-  border-radius:8px;
-  padding:13px;
-  outline:none;
-  background:white;
-  color:var(--text);
-}
-
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
-  border-color:var(--blue);
-  box-shadow:0 0 0 3px #1769d215;
-}
-
-.field textarea {
-  min-height:130px;
-  resize:vertical;
-}
-
-.rating {
-  display:flex;
-  flex-direction:row-reverse;
-  justify-content:flex-end;
-  gap:5px;
-}
-
-.rating input {display:none}
-
-.rating label {
-  color:#d8dee7;
-  font-size:34px;
-  cursor:pointer;
-}
-
-.rating label:hover,
-.rating label:hover ~ label,
-.rating input:checked ~ label {color:#ffae35}
-
-.submit-btn {
-  width:100%;
-  font-size:15px;
-}
-
-.note {
-  margin-top:12px;
-  font-size:12px;
-  color:var(--muted);
-}
-
-/* SIDE */
-
-.side-card {
-  background:var(--navy);
-  color:white;
-  border-radius:14px;
-  padding:32px;
-}
-
-.side-card h3 {
-  font-size:25px;
-  margin-bottom:12px;
-}
-
-.side-card>p {
-  font-size:14px;
-  color:#cbd8e9;
-  margin-bottom:25px;
-}
-
-.benefit {
-  display:flex;
-  gap:14px;
-  margin:23px 0;
-}
-
-.benefit-icon {
-  min-width:40px;
-  height:40px;
-  display:grid;
-  place-items:center;
-  border-radius:9px;
-  background:#ffffff18;
-  color:var(--orange);
-  font-size:20px;
-}
-
-.benefit strong {display:block}
-.benefit span {
-  color:#cbd8e9;
-  font-size:13px;
-}
-
-/* REVIEWS */
-
-.reviews-section {background:var(--bg)}
-
-.review-toolbar {
-  display:flex;
-  gap:12px;
-  margin-bottom:25px;
-}
-
-.review-toolbar input,
-.review-toolbar select {
-  padding:12px;
-  border:1px solid var(--border);
-  border-radius:8px;
-  background:white;
-  outline:none;
-}
-
-.review-toolbar input {flex:1;min-width:0}
-
-.review-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.review-card {
-  background:white;
-  border:1px solid var(--border);
-  border-radius:13px;
-  padding:23px;
-  overflow-wrap:anywhere;
-}
-
-.review-business {
-  color:var(--navy);
-  font-size:18px;
-  font-weight:800;
-}
-
-.review-meta {
-  color:var(--muted);
-  font-size:12px;
-  margin:5px 0 13px;
-}
-
-.stars {
-  color:#f2a62e;
-  letter-spacing:2px;
-  margin-bottom:12px;
-}
-
-.review-text {
-  font-size:14px;
-  color:#5c6d81;
-  margin-bottom:17px;
-}
-
-.review-author {
-  border-top:1px solid var(--border);
-  padding-top:13px;
-  font-size:13px;
-  font-weight:700;
-}
-
-.review-author span {
-  display:block;
-  font-size:12px;
-  color:var(--muted);
-  font-weight:400;
-}
-
-.empty {
-  text-align:center;
-  grid-column:1/-1;
-  padding:35px;
-  color:var(--muted);
-}
-
-/* CONTENT */
-
-.content-section {
-  padding:70px 0;
-}
-
-.content-section h2 {
-  font-size:30px;
-  color:var(--navy);
-  margin-bottom:18px;
-}
-
-.content-section h3 {
-  font-size:20px;
-  color:var(--navy);
-  margin:24px 0 8px;
-}
-
-.content-section p {
-  color:#64748b;
-  font-size:15px;
-  margin-bottom:14px;
-}
-
-/* FAQ */
-
-.faq-section {background:var(--bg)}
-
-.faq-item {
-  background:white;
-  border:1px solid var(--border);
-  border-radius:10px;
-  padding:20px;
-  margin-bottom:13px;
-}
-
-.faq-item h3 {
-  font-size:17px;
-  color:var(--navy);
-  margin-bottom:8px;
-}
-
-.faq-item p {
-  color:var(--muted);
-  font-size:14px;
-}
-
-/* CTA */
-
-.cta {
-  background:#fff3e3;
-  padding:55px 25px;
-  text-align:center;
-  border-radius:14px;
-}
-
-.cta h2 {
-  font-size:30px;
-  color:var(--navy);
-  margin-bottom:12px;
-}
-
-.cta p {
-  color:var(--muted);
-  margin-bottom:22px;
-}
-
-/* FOOTER */
-
-footer {
-  background:#0c203b;
-  color:white;
-  padding:55px 0 20px;
-}
-
-.footer-grid {
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:35px;
-  margin-bottom:35px;
-}
-
-footer h3 {margin-bottom:15px}
-footer p,footer a {
-  color:#bdcadd;
-  font-size:13px;
-}
-
-footer a {
-  display:block;
-  margin:9px 0;
-}
-
-footer a:hover {color:white}
-
-.copyright {
-  border-top:1px solid #ffffff20;
-  padding-top:20px;
-  text-align:center;
-  color:#aebdd1;
-  font-size:12px;
-}
-
-@media(max-width:850px) {
-  .nav-links {gap:12px;font-size:12px}
-  .review-layout {grid-template-columns:1fr}
-  .review-grid {grid-template-columns:repeat(2,1fr)}
-  .categories {grid-template-columns:repeat(2,1fr)}
-}
-
-@media(max-width:600px) {
-  .nav {min-height:65px}
-  .nav-links {display:none}
-  .logo {font-size:21px}
-  .nav>.btn {padding:10px 12px;font-size:12px}
-  .hero {padding:70px 0}
-  .hero h1 {font-size:36px}
-  .hero p {font-size:14px}
-  .stats {padding:17px 5px}
-  .stat strong {font-size:20px}
-  .stat span {font-size:10px}
-  .section {padding:55px 0}
-  .section-heading h2 {font-size:27px}
-  .categories,.location-grid,.review-grid {grid-template-columns:1fr}
-  .form-card,.side-card {padding:22px 17px}
-  .review-toolbar {flex-direction:column}
-  .footer-grid {grid-template-columns:1fr}
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="container nav">
-    <a href="/" class="logo">People<span>Review.</span></a>
-
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#categories">Categories</a>
-      <a href="#locations">Locations</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#write-review">Write a Review</a>
-    </nav>
-
-    <a href="#write-review" class="btn">Write a Review</a>
-  </div>
-</header>
-
-<main>
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-  <div class="container hero-content">
-
-    <div class="hero-label">
-      Genuine Customer Experiences in Kanyakumari District
-    </div>
-
-    <h1>
-      People Reviews in Kanyakumari,
-      <span>Nagercoil & Marthandam</span>
-    </h1>
-
-    <p>
-      Discover what local people say about travel agencies,
-      taxi services, tour operators and businesses.
-      Read genuine customer experiences and share your own
-      review to help others make better decisions.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#write-review" class="btn btn-orange">
-        Share Your Experience →
-      </a>
-      <a href="#reviews" class="btn btn-outline">
-        Read Customer Reviews
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- STATS -->
-
-<div class="container">
-  <div class="stats">
-    <div class="stat">
-      <strong id="totalReviews">0</strong>
-      <span>Published Reviews</span>
-    </div>
-    <div class="stat">
-      <strong>3 Areas</strong>
-      <span>Local Focus</span>
-    </div>
-    <div class="stat">
-      <strong>Open</strong>
-      <span>Customer Contributions</span>
-    </div>
-  </div>
-</div>
-
-<!-- CATEGORIES -->
-
-<section class="section" id="categories">
-  <div class="container">
-    <div class="section-heading">
-      <h2>Explore Customer Review Categories</h2>
-      <p>
-        Read customer experiences about travel and local services.
-      </p>
-    </div>
-
-    <div class="categories">
-      <a href="#reviews" class="category">
-        <div class="category-icon">🌍</div>
-        <h3>Travel Agencies</h3>
-        <p>Tour and travel experiences</p>
-      </a>
-
-      <a href="#reviews" class="category">
-        <div class="category-icon">🚕</div>
-        <h3>Taxi & Cab Services</h3>
-        <p>Local and outstation rides</p>
-      </a>
-
-      <a href="#reviews" class="category">
-        <div class="category-icon">🏝️</div>
-        <h3>Tour Operators</h3>
-        <p>Holiday and package tours</p>
-      </a>
-
-      <a href="#reviews" class="category">
-        <div class="category-icon">🚐</div>
-        <h3>Tempo Travellers</h3>
-        <p>Family and group journeys</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- LOCATION SEO -->
-
-<section class="section location-section" id="locations">
-  <div class="container">
-
-    <div class="section-heading">
-      <h2>Explore People Reviews by Location</h2>
-      <p>
-        Discover local customer reviews across Kanyakumari district.
-      </p>
-    </div>
-
-    <div class="location-grid">
-
-      <article class="location-card">
-        <h3>People Reviews in Kanyakumari</h3>
-        <p>
-          Read genuine customer reviews about travel agencies,
-          taxi services, tour operators and local businesses
-          in Kanyakumari.
-        </p>
-        <a href="/reviews/kanyakumari/">
-          Explore Kanyakumari Reviews →
-        </a>
-      </article>
-
-      <article class="location-card">
-        <h3>People Reviews in Nagercoil</h3>
-        <p>
-          Discover local business experiences, cab service
-          feedback and travel agency reviews in Nagercoil.
-        </p>
-        <a href="/reviews/nagercoil/">
-          Explore Nagercoil Reviews →
-        </a>
-      </article>
-
-      <article class="location-card">
-        <h3>People Reviews in Marthandam</h3>
-        <p>
-          Explore customer experiences about travel services,
-          tour operators and local businesses in Marthandam.
-        </p>
-        <a href="/reviews/marthandam/">
-          Explore Marthandam Reviews →
-        </a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- REVIEW FORM -->
-
-<section class="section" id="write-review">
-  <div class="container">
-
-    <div class="section-heading">
-      <h2>Share Your Travel or Business Experience</h2>
-      <p>
-        Your genuine feedback can help people choose better services.
-      </p>
-    </div>
-
-    <div class="review-layout">
-
-      <div class="form-card">
-        <h3>Write Your Review</h3>
-        <p class="subtitle">
-          Share your actual experience with any business.
-        </p>
-
-        <form id="reviewForm">
-
-          <div class="field">
-            <label for="business">Business Name *</label>
-            <input id="business" required maxlength="120"
-              placeholder="Enter travel agency or business name">
-          </div>
-
-          <div class="field">
-            <label for="type">Business Category *</label>
-            <select id="type" required>
-              <option value="">Select Category</option>
-              <option>Travel Agency</option>
-              <option>Taxi / Cab Service</option>
-              <option>Tour Operator</option>
-              <option>Tempo Traveller</option>
-              <option>Packers and Movers</option>
-              <option>Hotel</option>
-              <option>Restaurant</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label for="location">Business Location *</label>
-            <select id="location" required>
-              <option value="">Select Location</option>
-              <option>Kanyakumari</option>
-              <option>Nagercoil</option>
-              <option>Marthandam</option>
-              <option>Thuckalay</option>
-              <option>Colachel</option>
-              <option>Kuzhithurai</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label>Your Rating *</label>
-            <div class="rating">
-              <input type="radio" name="rating" id="s5" value="5" required>
-              <label for="s5">★</label>
-
-              <input type="radio" name="rating" id="s4" value="4">
-              <label for="s4">★</label>
-
-              <input type="radio" name="rating" id="s3" value="3">
-              <label for="s3">★</label>
-
-              <input type="radio" name="rating" id="s2" value="2">
-              <label for="s2">★</label>
-
-              <input type="radio" name="rating" id="s1" value="1">
-              <label for="s1">★</label>
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="review">Your Experience *</label>
-            <textarea id="review" required minlength="20"
-              maxlength="2000"
-              placeholder="Write your genuine experience about the service, quality, pricing, safety and customer support..."></textarea>
-          </div>
-
-          <div class="field">
-            <label for="customer">Your Name *</label>
-            <input id="customer" required maxlength="80"
-              placeholder="Enter your name">
-          </div>
-
-          <div class="field">
-            <label for="email">Email (Optional)</label>
-            <input id="email" type="email"
-              placeholder="Enter your email">
-          </div>
-
-          <button type="submit" class="btn submit-btn">
-            Submit Your Review →
-          </button>
-
-          <p class="note">
-            Reviews are subject to moderation. Submit genuine
-            experiences only. Your email will not be displayed publicly.
-          </p>
-
-        </form>
-      </div>
-
-      <aside class="side-card">
-        <h3>Your Experience Matters!</h3>
-        <p>
-          Help people discover better services through
-          honest and genuine customer feedback.
-        </p>
-
-        <div class="benefit">
-          <div class="benefit-icon">✍</div>
-          <div>
-            <strong>Share Your Story</strong>
-            <span>Tell others about your real experience.</span>
-          </div>
-        </div>
-
-        <div class="benefit">
-          <div class="benefit-icon">⭐</div>
-          <div>
-            <strong>Rate the Service</strong>
-            <span>Share your honest rating.</span>
-          </div>
-        </div>
-
-        <div class="benefit">
-          <div class="benefit-icon">🤝</div>
-          <div>
-            <strong>Help Local People</strong>
-            <span>Support informed local decisions.</span>
-          </div>
-        </div>
-      </aside>
-
-    </div>
-  </div>
-</section>
-
-<!-- LATEST REVIEWS -->
-
-<section class="section reviews-section" id="reviews">
-  <div class="container">
-
-    <div class="section-heading">
-      <h2>Latest People Reviews</h2>
-      <p>
-        Explore published customer experiences from local people.
-      </p>
-    </div>
-
-    <div class="review-toolbar">
-      <input type="search" id="searchReview"
-        placeholder="Search business or location..."
-        aria-label="Search reviews">
-
-      <select id="filterLocation" aria-label="Filter by location">
-        <option value="">All Locations</option>
-        <option>Kanyakumari</option>
-        <option>Nagercoil</option>
-        <option>Marthandam</option>
-        <option>Thuckalay</option>
-        <option>Colachel</option>
-        <option>Kuzhithurai</option>
-        <option>Other</option>
-      </select>
-
-      <select id="filterCategory" aria-label="Filter by category">
-        <option value="">All Categories</option>
-        <option>Travel Agency</option>
-        <option>Taxi / Cab Service</option>
-        <option>Tour Operator</option>
-        <option>Tempo Traveller</option>
-        <option>Packers and Movers</option>
-        <option>Hotel</option>
-        <option>Restaurant</option>
-        <option>Other</option>
-      </select>
-    </div>
-
-    <div class="review-grid" id="reviewList">
-      <div class="empty">
-        No published reviews yet. Be the first to share your experience!
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SEO CONTENT -->
-
-<section class="content-section">
-  <div class="container">
-
-    <h2>Discover Genuine People Reviews in Kanyakumari District</h2>
-
-    <p>
-      Choosing the right service is important for every customer.
-      People Review helps people discover customer experiences
-      about travel agencies, taxi services, tour operators and
-      other local businesses in Kanyakumari district.
-    </p>
-
-    <p>
-      Whether you are searching for a travel agency in Kanyakumari,
-      a taxi service in Nagercoil or a tour operator in Marthandam,
-      customer feedback can help you compare services and make
-      more informed decisions.
-    </p>
-
-    <h3>Travel Agency and Taxi Service Reviews</h3>
-
-    <p>
-      Read customer experiences about local travel agencies,
-      family tour packages, tempo traveller rentals, cab services,
-      airport transfers and outstation trips. Share your own
-      genuine experience to help other travellers.
-    </p>
-
-    <h3>Local Business Reviews by People</h3>
-
-    <p>
-      People Review aims to make it easier to discover local
-      businesses through genuine customer feedback. Customers
-      can submit reviews, provide ratings and share experiences
-      about services they have actually used.
-    </p>
-
-    <h3>Why Share Your Review?</h3>
-
-    <p>
-      Honest reviews help other customers understand service
-      quality, pricing, communication and customer support.
-      Your experience can help someone make a better choice.
-    </p>
-
-  </div>
-</section>
-
-<!-- FAQ -->
-
-<section class="section faq-section">
-  <div class="container">
-
-    <div class="section-heading">
-      <h2>Frequently Asked Questions</h2>
-      <p>Common questions about sharing and finding customer reviews.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Where can I read people reviews in Kanyakumari?</h3>
-      <p>
-        You can explore customer experiences about travel agencies,
-        taxi services, tour operators and other businesses in
-        Kanyakumari through People Review.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Can I submit a business review in Nagercoil?</h3>
-      <p>
-        Yes. You can submit genuine customer feedback about
-        businesses and travel services located in Nagercoil.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Can I review a travel agency in Marthandam?</h3>
-      <p>
-        Yes. Select the travel agency category, choose Marthandam
-        as the location and describe your actual experience.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Can I review any travel company?</h3>
-      <p>
-        You can submit genuine reviews about travel agencies,
-        taxi services, tour operators and other listed business
-        categories.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Are reviews published immediately?</h3>
-      <p>
-        Reviews should be checked for authenticity and compliance
-        before being published on the website.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- FAQ STRUCTURED DATA -->
 
 <script type="application/ld+json">
 {
@@ -1140,225 +202,397 @@ footer a:hover {color:white}
   "mainEntity":[
     {
       "@type":"Question",
-      "name":"Where can I read people reviews in Kanyakumari?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"You can explore customer experiences about travel agencies, taxi services, tour operators and other businesses in Kanyakumari through People Review."
-      }
+      "name":"How can I share a business review?",
+      "acceptedAnswer":{"@type":"Answer","text":"Choose the business name, category, location, rating and write about your experience using the review form."}
     },
     {
       "@type":"Question",
-      "name":"Can I submit a business review in Nagercoil?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Yes. You can submit genuine customer feedback about businesses and travel services located in Nagercoil."
-      }
+      "name":"Can I review any travel agency in Kanyakumari?",
+      "acceptedAnswer":{"@type":"Answer","text":"You can submit a review about a travel agency, taxi service or other local business in Kanyakumari, Nagercoil and Marthandam."}
     },
     {
       "@type":"Question",
-      "name":"Can I review a travel agency in Marthandam?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Yes. Select the travel agency category, choose Marthandam as the location and describe your actual experience."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"Are reviews published immediately?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Reviews should be checked for authenticity and compliance before being published on the website."
-      }
+      "name":"Can I read reviews from Nagercoil and Marthandam?",
+      "acceptedAnswer":{"@type":"Answer","text":"Use the location filter to browse submitted reviews from Nagercoil, Marthandam and Kanyakumari."}
     }
   ]
 }
 </script>
+</head>
 
-<!-- CTA -->
+<body>
 
-<section class="section">
-  <div class="container">
-    <div class="cta">
-      <h2>Have an Experience to Share?</h2>
-      <p>
-        Your genuine review can help people across
-        Kanyakumari, Nagercoil and Marthandam.
-      </p>
-      <a href="#write-review" class="btn">
-        Write Your Review Today
-      </a>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">People<span>Review</span></a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#locations">Locations</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#write-review">Write a Review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="tag">Real Experiences. Trusted Opinions.</div>
+    <h1>People Reviews in Kanyakumari, Nagercoil &amp; Marthandam</h1>
+    <p>
+      Discover customer experiences and share your own reviews.
+      Explore travel agencies, taxi services, tour operators and local
+      businesses across Kanyakumari district.
+    </p>
+    <div class="hero-buttons">
+      <a href="#reviews" class="btn btn-orange">Read Reviews</a>
+      <a href="#write-review" class="btn btn-white">Write a Review</a>
     </div>
   </div>
 </section>
 
+<section id="locations">
+  <div class="container">
+    <h2 class="section-title">Explore Reviews by Location</h2>
+    <p class="section-desc">
+      Find customer feedback about travel services and local businesses
+      in important locations across Kanyakumari district.
+    </p>
+
+    <div class="locations">
+      <article class="location-card">
+        <h3>Kanyakumari Reviews</h3>
+        <p>Explore reviews about travel agencies, tourist taxis,
+        sightseeing services and local businesses in Kanyakumari.</p>
+        <a href="#reviews">Explore Reviews →</a>
+      </article>
+
+      <article class="location-card">
+        <h3>Nagercoil Reviews</h3>
+        <p>Read customer experiences about taxi services, tour operators
+        and businesses in Nagercoil.</p>
+        <a href="#reviews">Explore Reviews →</a>
+      </article>
+
+      <article class="location-card">
+        <h3>Marthandam Reviews</h3>
+        <p>Discover reviews about local services, travel agencies
+        and businesses in Marthandam.</p>
+        <a href="#reviews">Explore Reviews →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="form-section" id="write-review">
+  <div class="container form-layout">
+    <div class="form-info">
+      <h2>Share Your Experience</h2>
+      <p>Your experience can help other people make better decisions.
+      Write an honest review about a business or service you have used.</p>
+      <ul>
+        <li>Review any business</li>
+        <li>Share your actual experience</li>
+        <li>Rate the service from 1 to 5 stars</li>
+        <li>Help other customers make informed choices</li>
+      </ul>
+    </div>
+
+    <form class="review-form" id="reviewForm">
+      <h2 class="section-title" style="font-size:25px">Write Your Review</h2>
+
+      <div class="field">
+        <label for="business">Business / Travel Agency Name *</label>
+        <input id="business" name="business" required maxlength="100"
+        placeholder="Enter business name">
+      </div>
+
+      <div class="two-col">
+        <div class="field">
+          <label for="category">Business Category *</label>
+          <select id="category" required>
+            <option value="">Select category</option>
+            <option>Travel Agency</option>
+            <option>Taxi / Cab Service</option>
+            <option>Tour Operator</option>
+            <option>Tempo Traveller</option>
+            <option>Packers and Movers</option>
+            <option>Hotel / Restaurant</option>
+            <option>Other Business</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="location">Location *</label>
+          <select id="location" required>
+            <option value="">Select location</option>
+            <option>Kanyakumari</option>
+            <option>Nagercoil</option>
+            <option>Marthandam</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Your Rating *</label>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5" required>
+          <label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1">★</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="review">Your Review *</label>
+        <textarea id="review" required minlength="10" maxlength="1500"
+        placeholder="Write about your real experience..."></textarea>
+      </div>
+
+      <div class="two-col">
+        <div class="field">
+          <label for="customer">Your Name *</label>
+          <input id="customer" required maxlength="60"
+          placeholder="Enter your name">
+        </div>
+        <div class="field">
+          <label for="email">Email (Optional)</label>
+          <input id="email" type="email" maxlength="120"
+          placeholder="Enter email">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-orange">Submit Review</button>
+      <p class="notice">Please share only honest reviews based on your actual experience.</p>
+    </form>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <h2 class="section-title">Latest People Reviews</h2>
+    <p class="section-desc">
+      Browse customer experiences about businesses in Kanyakumari,
+      Nagercoil and Marthandam.
+    </p>
+
+    <div class="review-tools">
+      <input type="search" id="searchReview" placeholder="Search business name...">
+      <select id="filterLocation">
+        <option value="">All Locations</option>
+        <option>Kanyakumari</option>
+        <option>Nagercoil</option>
+        <option>Marthandam</option>
+        <option>Other</option>
+      </select>
+      <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option>Travel Agency</option>
+        <option>Taxi / Cab Service</option>
+        <option>Tour Operator</option>
+        <option>Tempo Traveller</option>
+        <option>Packers and Movers</option>
+        <option>Hotel / Restaurant</option>
+        <option>Other Business</option>
+      </select>
+    </div>
+
+    <div class="review-list" id="reviewList">
+      <div class="empty">No reviews submitted yet. Be the first to share your experience.</div>
+    </div>
+  </div>
+</section>
+
+<section class="seo-content">
+  <div class="container">
+    <h2 class="section-title">Discover Trusted Local Business Experiences</h2>
+
+    <h3>People Reviews in Kanyakumari</h3>
+    <p>
+      Looking for customer experiences about businesses in Kanyakumari?
+      People Review helps visitors explore feedback about travel agencies,
+      taxi services, tour operators and other local services. Share your
+      experience to help other customers make informed decisions.
+    </p>
+
+    <h3>People Reviews in Nagercoil</h3>
+    <p>
+      Explore people reviews in Nagercoil for taxi services, travel agencies,
+      tour operators, hotels and other local businesses. Read shared customer
+      experiences before choosing a service.
+    </p>
+
+    <h3>People Reviews in Marthandam</h3>
+    <p>
+      Find customer feedback about businesses in Marthandam. Share your
+      experience with local services and help people understand the experiences
+      of other customers.
+    </p>
+
+    <h3>Travel Agency and Taxi Service Reviews</h3>
+    <p>
+      Choosing a travel agency or taxi service is an important decision.
+      Read customer experiences about booking, communication, punctuality
+      and service quality. Reviews should reflect genuine personal experiences.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>How can I submit a review?</h3>
+      <p>Complete the review form with the business name, category, location,
+      rating and your actual experience. Then select Submit Review.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I review any business?</h3>
+      <p>Yes. You can submit reviews about travel agencies, taxi services,
+      tour operators, hotels, packers and movers and other businesses.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I find reviews in Kanyakumari, Nagercoil and Marthandam?</h3>
+      <p>Yes. Use the location filter to find submitted reviews from these areas.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Will my review appear immediately?</h3>
+      <p>In this demo version, a submitted review appears immediately in the
+      same browser. A shared database is needed for all visitors to see it.</p>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer>
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-        <a href="/" class="logo" style="color:white">
-          People<span>Review.</span>
-        </a>
-        <p style="margin-top:15px;max-width:350px">
-          Discover genuine customer experiences.
-          Read and share local business reviews
-          across Kanyakumari district.
-        </p>
-      </div>
-
-      <div>
-        <h3>Quick Links</h3>
-        <a href="#home">Home</a>
-        <a href="#categories">Categories</a>
-        <a href="#locations">Locations</a>
-        <a href="#reviews">Latest Reviews</a>
-      </div>
-
-      <div>
-        <h3>Write Reviews</h3>
-        <a href="#write-review">Submit a Review</a>
-        <a href="/reviews/kanyakumari/">Kanyakumari</a>
-        <a href="/reviews/nagercoil/">Nagercoil</a>
-        <a href="/reviews/marthandam/">Marthandam</a>
-      </div>
-
+  <div class="container footer-inner">
+    <div>
+      <div class="logo" style="color:white">People<span>Review</span></div>
+      <p>Trusted by Our Reviews</p>
     </div>
-
-    <div class="copyright">
-      © 2026 People Review. All Rights Reserved.
-      <br>Independent Customer Review Platform.
+    <div>
+      <p>Serving Kanyakumari | Nagercoil | Marthandam</p>
+      <p>Share honest experiences. Help people choose better.</p>
     </div>
-
   </div>
 </footer>
 
 <script>
-/*
-  FRONTEND DEMO ONLY.
-  localStorage is not a shared database.
-  Production reviews must be loaded from an API
-  and displayed only after admin approval.
-*/
+const STORAGE_KEY = "peopleReviewPublished";
 
-const STORAGE_KEY = "peopleReviewPendingDemo";
-
-const form = document.getElementById("reviewForm");
-const list = document.getElementById("reviewList");
-
-function getPendingReviews() {
+function getReviews() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-  } catch {
+  } catch (error) {
     return [];
   }
 }
 
+function saveReviews(reviews) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
+}
+
 function escapeHTML(value) {
-  return String(value).replace(/[&<>"']/g, c => ({
-    "&":"&amp;",
-    "<":"&lt;",
-    ">":"&gt;",
-    '"':"&quot;",
-    "'":"&#039;"
-  })[c]);
+  return String(value).replace(/[&<>"']/g, function(char) {
+    return {
+      "&":"&amp;",
+      "<":"&lt;",
+      ">":"&gt;",
+      '"':"&quot;",
+      "'":"&#039;"
+    }[char];
+  });
 }
 
 function renderReviews() {
+  const list = document.getElementById("reviewList");
+  const search = document.getElementById("searchReview").value.toLowerCase();
   const location = document.getElementById("filterLocation").value;
   const category = document.getElementById("filterCategory").value;
-  const search = document.getElementById("searchReview").value
-    .toLowerCase().trim();
 
-  // Only approved reviews should come from the production API.
-  const reviews = getPendingReviews().filter(r => r.status === "approved");
+  const reviews = getReviews().filter(review => {
+    return (
+      review.business.toLowerCase().includes(search) &&
+      (!location || review.location === location) &&
+      (!category || review.category === category)
+    );
+  });
 
-  document.getElementById("totalReviews").textContent = reviews.length;
-
-  const filtered = reviews.filter(r =>
-    (!location || r.location === location) &&
-    (!category || r.type === category) &&
-    (!search ||
-      r.business.toLowerCase().includes(search) ||
-      r.location.toLowerCase().includes(search))
-  );
-
-  if (!filtered.length) {
-    list.innerHTML =
-      '<div class="empty">No published reviews found. Be the first to share a genuine experience!</div>';
+  if (!reviews.length) {
+    list.innerHTML = '<div class="empty">No matching reviews found. Be the first to share your experience.</div>';
     return;
   }
 
-  list.innerHTML = filtered.map(r => `
+  list.innerHTML = reviews.map(review => `
     <article class="review-card">
-      <div class="review-business">${escapeHTML(r.business)}</div>
+      <h3>${escapeHTML(review.business)}</h3>
+      <div class="stars">${"★".repeat(review.rating)}${"☆".repeat(5-review.rating)}</div>
       <div class="review-meta">
-        ${escapeHTML(r.type)} · ${escapeHTML(r.location)}
+        ${escapeHTML(review.category)} · ${escapeHTML(review.location)}
       </div>
-      <div class="stars" aria-label="${r.rating} out of 5 stars">
-        ${"★".repeat(r.rating)}${"☆".repeat(5-r.rating)}
-      </div>
-      <p class="review-text">${escapeHTML(r.review)}</p>
-      <div class="review-author">
-        ${escapeHTML(r.customer)}
-        <span>${escapeHTML(r.date)}</span>
+      <p class="review-text">${escapeHTML(review.review)}</p>
+      <div class="review-meta">
+        Shared by ${escapeHTML(review.customer)} · ${escapeHTML(review.date)}
       </div>
     </article>
   `).join("");
 }
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
+document.getElementById("reviewForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-  const selectedRating = document.querySelector(
-    'input[name="rating"]:checked'
-  );
+  const rating = document.querySelector('input[name="rating"]:checked');
 
-  if (!selectedRating) {
-    alert("Please select your rating.");
+  if (!rating) {
+    alert("Please select a star rating.");
     return;
   }
 
   const review = {
     id: Date.now(),
     business: document.getElementById("business").value.trim(),
-    type: document.getElementById("type").value,
+    category: document.getElementById("category").value,
     location: document.getElementById("location").value,
-    rating: Number(selectedRating.value),
+    rating: Number(rating.value),
     review: document.getElementById("review").value.trim(),
     customer: document.getElementById("customer").value.trim(),
     email: document.getElementById("email").value.trim(),
-    date: new Date().toLocaleDateString("en-IN"),
-    status: "pending"
+    date: new Date().toLocaleDateString("en-IN")
   };
 
-  if (!review.business || !review.location ||
-      !review.type || review.review.length < 20 ||
-      !review.customer) {
+  if (!review.business || !review.review || !review.customer) {
     alert("Please complete all required fields.");
     return;
   }
 
-  const reviews = getPendingReviews();
+  const reviews = getReviews();
   reviews.unshift(review);
+  saveReviews(reviews);
 
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
-
-  form.reset();
-
-  alert("Thank you! Your review has been submitted for moderation.");
-
+  this.reset();
   renderReviews();
+
+  alert("Thank you! Your review is now displayed.");
+
+  document.getElementById("reviews").scrollIntoView({
+    behavior:"smooth"
+  });
 });
 
-["searchReview","filterLocation","filterCategory"].forEach(id => {
-  document.getElementById(id).addEventListener(
-    id === "searchReview" ? "input" : "change",
-    renderReviews
-  );
-});
+document.getElementById("searchReview").addEventListener("input", renderReviews);
+document.getElementById("filterLocation").addEventListener("change", renderReviews);
+document.getElementById("filterCategory").addEventListener("change", renderReviews);
 
 renderReviews();
 </script>
